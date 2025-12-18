@@ -49,10 +49,10 @@ public class MainActivity extends BaseActivity {
     private void findViews() {
         lightImageview = findViewById(R.id.light_imageview);
         switchButton = findViewById(R.id.switchButton);
-        fadeOut(0);
     }
 
     private void setupViews() {
+        fadeOut(0);
         switchButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             cameraFlasher.init(MainActivity.this);
             if (isChecked) {
